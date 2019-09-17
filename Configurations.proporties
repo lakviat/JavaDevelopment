@@ -1,0 +1,11 @@
+name = james
+address = 123 main street
+PhoneNumber = 608-123-4342
+username = Admin
+password = admin123
+browser = chrome
+oracle.url = jdbc:oracle:thin:@ec2-52-14-95-169.us-east-2.compute.amazonaws.com:1521:xe
+oracle.username = hr
+oracle.password = hr
+
+

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MyFirstTest" verbose="1" >
+    <test name="demoxml.suitr" >
+        <classes>
+            <class name="Selenium.Specialized" />
+        </classes>
+    </test>
+
+</suite>
+
+
+
+
