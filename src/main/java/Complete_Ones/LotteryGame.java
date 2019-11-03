@@ -21,6 +21,18 @@ public class LotteryGame {
         Random ran = new Random();
         ArrayList<String> winnersFromGroup = new ArrayList();
 
+        int num = 1234567810;
+        String numbers = ""+num;
+        int count = 1;
+        String [] arr = new String[numbers.length()];
+        for (int i = 0; i <arr.length ; i++) {
+            if(arr[i].equals(count++)){
+                System.out.print("GOOD");
+            }else{
+                arr[i].equals(count);
+                System.out.print(arr.toString());
+            }
+        }
 
         String winner = "";
         for(String[] groups: allGroups) {
