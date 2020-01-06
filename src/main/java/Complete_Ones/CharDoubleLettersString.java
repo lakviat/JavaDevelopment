@@ -10,14 +10,7 @@ public class CharDoubleLettersString {
         c = word.charAt(i);
         result = result + c +c;
 
-
-
-
-
-
-
         }
-
         System.out.println(result);
                 }
 
