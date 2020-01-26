@@ -1,4 +1,4 @@
-package Arrays.Overriding;
+package Overriding;
 
 public class Thread {
     public static void main(String[] args) throws Exception {

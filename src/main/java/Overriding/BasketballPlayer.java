@@ -1,4 +1,4 @@
-package Arrays.Overriding;
+package Overriding;
 
 public class BasketballPlayer extends Human {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Arrays.Overriding;
+package Overriding;
 
 public class Human {
     String gender;

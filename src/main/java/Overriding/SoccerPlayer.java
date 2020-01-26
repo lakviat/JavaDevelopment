@@ -1,4 +1,4 @@
-package Arrays.Overriding;
+package Overriding;
 
 public class SoccerPlayer extends Human {
     int jerseyNumber;
