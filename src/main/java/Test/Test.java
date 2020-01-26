@@ -1,6 +1,5 @@
 package Test;
 
-import com.sun.imageio.plugins.wbmp.WBMPImageReader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 

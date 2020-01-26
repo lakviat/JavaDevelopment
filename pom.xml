@@ -84,12 +84,6 @@
                 <scope>test</scope>
             </dependency>
 
-        <!--This dependency for to being able to use the SQL connection-->
-        <dependency>
-            <groupId>oracle</groupId>
-            <artifactId>ojdbc6</artifactId>
-            <version>11.2.0.3</version>
-        </dependency>
         <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
         <dependency>
             <groupId>io.rest-assured</groupId>
@@ -97,11 +91,6 @@
             <version>3.1.0</version>
             <scope>test</scope>
         </dependency>
-
-
-
-
-
 
 
     </dependencies>
@@ -116,5 +105,12 @@
 
     </repositories>
 
-    
+    <!-- This resolves the issue with no supported -->
+    <build> <plugins> <plugin> <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version> <configuration>
+            <release>10</release> </configuration>
+    </plugin> </plugins> </build>
+
+
 </project>
