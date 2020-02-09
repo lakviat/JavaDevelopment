@@ -1,6 +1,6 @@
 package Complete_Ones;
 
-public class IterateFirstLastIntMax {
+public class IterateFirstLastIntMaksimSolution {
 
     public static void main(String[] args) {
         int[]arr={10,20,30};
