@@ -3,7 +3,7 @@ package Complete_Ones;
 import java.util.Arrays;
 
 public class PrimeNumbers {
-    public  void main(String[] args)  {
+    public static void main(String[] args)  {
 
         for (int k = 1; k < 101; k++) {
             int num = k;
