@@ -1,6 +1,5 @@
 package Constructors;
 
-import Inherritance.CondigBootcamp;
 
 public class Const {
     //This is the constructor metho
