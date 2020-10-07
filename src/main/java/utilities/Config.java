@@ -1,7 +1,5 @@
 package utilities;
-
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.Properties;
 
 public class Config {
@@ -9,7 +7,7 @@ public class Config {
    static Properties pro;
 
     static{
-        String path = "Configurations.proporties";
+        String path = "Configuration.proporties";
         try {
             FileInputStream file = new FileInputStream(path);
             pro = new Properties();
