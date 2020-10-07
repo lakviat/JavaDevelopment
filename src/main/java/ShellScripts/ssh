@@ -1,0 +1,5 @@
+#!/bin/bash
+expect -c 'spawn ssh root@ip_address;
+expect "assword";
+send "Password\r";
+interact'
