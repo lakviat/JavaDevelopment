@@ -8,7 +8,7 @@ import java.sql.SQLOutput;
 
 public class Term {
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "/Users/apple/Downloads/New/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/nurlandzhunushaliev/Downloads/ChromeDriverFolder/chromedriver");
         WebDriver driver = new ChromeDriver();
         driver.get("http://www.etsy.com");
         driver.findElement(By.xpath("//*[@id=\'search-query\']")).sendKeys("Term");

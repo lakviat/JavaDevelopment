@@ -2,7 +2,6 @@ package Complete_Ones;
 
 import Constructors.Const;
 import Constructors.TestConstructor;
-import Day_42_Constructor.Constructor;
 
 public class ReverseString {
     public static void main(String[] args) {
