@@ -3,6 +3,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.Random;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 
 public class LotteryGame {
@@ -24,7 +25,7 @@ public class LotteryGame {
         int num = 1234567810;
         String numbers = ""+num;
         int count = 1;
-        String [] arr = new String[numbers.length()];
+        String [] arr = numbers.split(",");
         for (int i = 0; i <arr.length ; i++) {
             if(arr[i].equals(count++)){
                 System.out.print("GOOD");
@@ -49,7 +50,6 @@ public class LotteryGame {
         label.setFont(new Font("Arial", Font.BOLD, 25));
         UIManager.put("OptionPane.minimumSize",new Dimension(300, 300));
         JOptionPane.showMessageDialog(null, label, "Lottery Game", JOptionPane.DEFAULT_OPTION);
-
 
 
     }
