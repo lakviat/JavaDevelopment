@@ -31,7 +31,7 @@ class Overloading {
 
         public static void main(String[] args) {
             Overloading df = new AnotherName();
-            df.bark();
+            df.bark(10, 10);
         }
     }
 
