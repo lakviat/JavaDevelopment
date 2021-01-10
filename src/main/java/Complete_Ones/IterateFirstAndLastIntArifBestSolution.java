@@ -2,8 +2,10 @@ package Complete_Ones;
 
 import java.util.Arrays;
 
-public class IterateFirstAndLastIntArif2 {
+public class IterateFirstAndLastIntArifBestSolution {
     public static void main(String[] args) {
+
+        // This creates a new array of integers and iterates first followed with last one
 
         int [] array = {10,20,30,40,50,60,70,80};
         int [] newArray = new int[array.length];

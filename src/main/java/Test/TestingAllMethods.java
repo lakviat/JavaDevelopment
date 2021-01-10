@@ -1,5 +1,4 @@
 package Test;
-import Complete_Ones.IterateFirstAndLastIntArif2;
 
 import java.util.Arrays;
 import java.util.List;
