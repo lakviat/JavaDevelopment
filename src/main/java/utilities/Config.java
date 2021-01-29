@@ -7,7 +7,7 @@ public class Config {
    static Properties pro;
 
     static{
-        String path = "Configuration.proporties";
+        String path = "configuration.properties";
         try {
             FileInputStream file = new FileInputStream(path);
             pro = new Properties();
