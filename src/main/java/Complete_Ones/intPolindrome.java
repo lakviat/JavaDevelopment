@@ -1,16 +1,20 @@
 package Complete_Ones;
+import java.util.Arrays;
 
 public class intPolindrome {
     public static void main(String[] args) {
-        String name[] = {"aibek", "nur", "hel"};
+        // This function finds polindrom
+
+        String name[] = {"aibek", "abba", "nur", "hel", "bob"};
         for (int i = 0; i <name.length/2 ; i++) {
             String temp ="";
             temp = name[i];
             name[i] = name[name.length-1-i];
             name[name.length-1-i] = temp;
+            System.out.println(temp);
 
         }
-        System.out.println(name.toString());
+        System.out.println(Arrays.toString(name));
     }
 }
 

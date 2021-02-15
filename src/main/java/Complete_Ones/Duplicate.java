@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Duplicate {
     public static void main(String[] args) {
 
+        // Duplicates in int of arrays
         int[] nums = {10, 20, 30, 10, 20, 30, 40};
         for (int i = 0; i < nums.length; i++) {
             boolean duplicate = false;
@@ -15,9 +16,6 @@ public class Duplicate {
             if (duplicate == true)
                 System.out.print(nums[i] + " ");
         }
-    }
-    public int [] duplicates (int [] nums){
-        return nums;
     }
 }
 

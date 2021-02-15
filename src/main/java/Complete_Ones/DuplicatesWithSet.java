@@ -22,7 +22,7 @@ public class DuplicatesWithSet {
                 }
             }
         }
-        System.out.println(duplicates);
-        System.out.println(nonduplicates);
+        System.out.println("DUPLICATES : " + duplicates);
+        System.out.println("NONE DUPLICATES : " + nonduplicates);
     }
 }

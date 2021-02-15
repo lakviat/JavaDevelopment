@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class Collections {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         // List -> interface
         List<Map<String, Object>> list = new ArrayList();
 
@@ -36,8 +36,8 @@ public class Collections {
         list.add(map1);
         list.add(map2);
         //System.out.println("Student_id  and");
-        for(Map<String, Object> printMap: list){
-            System.out.println(printMap.get("student_id")+ " and "+ printMap.get("first_name"));
+        for (Map<String, Object> printMap : list) {
+            System.out.println(printMap.get("student_id") + " and " + printMap.get("first_name"));
         }
 
 
@@ -50,9 +50,6 @@ public class Collections {
          *
          *
          * */
-
-
-
 
 
         // student_id = 27

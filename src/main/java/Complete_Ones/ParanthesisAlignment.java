@@ -30,7 +30,6 @@ public class ParanthesisAlignment {
                     continue;
                 }
 
-
                 else {
                     isMatched=false;
                     break;
