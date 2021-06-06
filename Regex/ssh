@@ -3,7 +3,3 @@ expect -c 'spawn ssh root@ip_address;
 expect "assword";
 send "Password\r";
 interact'
-
-
-
-// might need to do yum install expect

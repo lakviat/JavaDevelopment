@@ -1,0 +1,11 @@
+To Format the Value in python we can use
+rounded_value = 19.2000000003
+print(round(rounded_value, 1))
+Output : 19.2
+----
+Range function has steps
+range(start, stop, step)
+step jump from number specified
+----
+Traverse the string we can use
+for s in intput_string[: :-1]:

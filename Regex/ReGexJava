@@ -1,6 +1,5 @@
 String[] splits = str.split("[^a-z]");
 this regex will split all by words only
-
 [^a-z]
 
 Example
@@ -10,4 +9,4 @@ countYZ("!!day--yaz!!") → 2	2	OK
 countYZ("DAY abc XYZ") → 2	2	OK
 countYZ("y2bz") → 2	2	OK
 countYZ("zxyx") → 0	0	OK
-============================================
+=====
