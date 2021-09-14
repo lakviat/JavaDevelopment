@@ -1,8 +1,8 @@
 package Complete_Ones;
 
-public class TestCase {
+public class IterateTwoStringsFirstCharAndNumbers {
     public static void main(String[] args) {
-        String name = "Shirin";
+        String name = "Farid";
         String numbers = "12344555";
         String totalname = "";
         for (int i = 0; i < name.length(); i++) {

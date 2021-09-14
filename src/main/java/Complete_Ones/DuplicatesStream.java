@@ -1,4 +1,4 @@
-package Streams;
+package Complete_Ones;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 
 public class DuplicatesStream {
     public static void main(String[] args) {
-
 
         List<Integer> numbers = Arrays.asList(new Integer[]{1,2,1,3,4,4});
 

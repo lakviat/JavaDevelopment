@@ -4,11 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class SeasonsTask{
+public class FindSeasonMonthIntArr {
     public static void main(String[] args) {
 
+        // winter, spring, summer, fall
         int[] nums = {4, 7, 8, -1, 6, 4, -4, 3, 4, 9, 0, 5};
-        //winter, spring,    summer,    fall
 
         String[] seasons = {"winter", "spring", "summer", "fall"};
 

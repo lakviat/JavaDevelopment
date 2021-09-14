@@ -3,10 +3,8 @@ package Complete_Ones;
 import java.util.Arrays;
 
 public class PrimeNumbers {
-    public static void main(String[] args)  {
-
+    public static void main(String[] args) {
         // Prime numbers
-
         for (int k = 1; k < 101; k++) {
             boolean flag = false;
             for (int i = 2; i <= k / 2; ++i) {
@@ -21,10 +19,8 @@ public class PrimeNumbers {
             else
                 System.out.println(k + " is not a prime number.");
         }
-
     }
-
-        }
+}
 
 
 

@@ -1,4 +1,4 @@
-package Complete_Ones;
+package utilities;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,10 +11,6 @@ public class J_label {
         JOptionPane.showMessageDialog(null, jLabel, "Lottery Game", JOptionPane.DEFAULT_OPTION);
         jLabel.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         jLabel.setCursor(Cursor.getDefaultCursor());
-
-
-
-
 
     }
 }

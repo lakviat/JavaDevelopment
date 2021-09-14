@@ -23,10 +23,7 @@ public class StringEndingYZ {
        name10 += name1.substring(name1.length() -1);
         System.out.println(name10);
 
-
         }
-
-
     }
 
 
