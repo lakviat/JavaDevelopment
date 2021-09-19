@@ -1,0 +1,4 @@
+String[] splits = str.split("[^a-z]");
+this regex will split all by words only
+[^a-z]
+-----------------------------------------
