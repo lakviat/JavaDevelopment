@@ -2,3 +2,16 @@ String[] splits = str.split("[^a-z]");
 this regex will split all by words only
 [^a-z]
 -----------------------------------------
+System.out.printf("%-15s%03d\n",s1,x);
+%s is used for string so,
+%-15s --> is used for -15 spaces right side for string
+same as
+%d is used for int
+%03 --> used for 3 spaces left side for int with starting 0
+printf functions allows to manage the whitespaces in between values
+========== OUTPUT ==============
+java           100
+cpp            065
+python         050
+
+-----------------------------------------
