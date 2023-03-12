@@ -14,7 +14,7 @@ public class NextElmntInArray {
         for (int i = 0; i < number.length ; i++) {
             if(number[i] ==2 && number[i + 1] ==3){
                 number[i +1] = 0;
-                System.out.println(Arrays.asList(number + "True"));
+                System.out.println(Arrays.asList(number + "Truehfjwefh"));
             }else{
                 System.out.println(Arrays.asList(number + "NOT True"));
             }

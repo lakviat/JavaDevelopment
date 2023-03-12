@@ -8,6 +8,12 @@ public class Config {
 
     private static Properties properties = new Properties();
 
+    public static String getProperty(String keyword) {
+
+        return properties.getProperty(keyword);
+
+    }
+
     static  {
 
         String path = "configuration.properties";
@@ -24,14 +30,5 @@ public class Config {
         }
 
     }
-
-    public static String getProperty(String keyword) {
-
-        return properties.getProperty(keyword);
-
-    }
-
-
-
 
 }

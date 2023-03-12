@@ -10,6 +10,7 @@ public class ReverseIntArray {
             numbers[i] = numbers[numbers.length - (1+i)];
             numbers[numbers.length-(1+i)] = temp;
             System.out.println(Arrays.toString(numbers));
+
         }
     }
 }

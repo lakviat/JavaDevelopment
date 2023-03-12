@@ -10,6 +10,9 @@ public class LotteryGame {
         String[] group1 = {"Deniz", "Can", " Shirin", "Dovlet"};
         String[] group2 = {"Mirlan", "Aigul", "Mavluda", "Nurlan"};
         String[] group3 = {"Asel", "Togzhan", "Ilyas", "Ajara", "Adina","Izat"};
+        String[] group5 = {"Asel", "Togzhan", "Ilyas", "Ajara", "Adina","Izat"};
+        String[] group6 = {"Asel", "Togzhan", "Ilyas", "Ajara", "Adina","Izat"};
+        String[] group8 = {"Asel", "Togzhan", "Ilyas", "Ajara", "Adina","Izat"};
         String[] group4 = {"Aika", "Alex", "Ruslan", "Ermek","Sarynjy"};
 
         ArrayList<String[]> allGroups = new ArrayList();
