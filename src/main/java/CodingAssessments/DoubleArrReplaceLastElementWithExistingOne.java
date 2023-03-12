@@ -2,7 +2,7 @@ package CodingAssessments;
 
 import java.util.Arrays;
 
-public class DoubleArrReplaceLastEl {
+public class DoubleArrReplaceLastElementWithExistingOne {
     public static void main(String[] args) {
 
         /// double the size of array, and replace the last element of the array with existing one
