@@ -1,4 +1,4 @@
-package batch2;
+package batch2.Nurlan;
 
 public class Nurlan {
     public static void main(String[] args) {
