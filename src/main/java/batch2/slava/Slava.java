@@ -14,7 +14,6 @@ public class Slava {
         int size = arr.length;
         method.Array(arr,size);
     }
-
     public void Array(int[] arr, int size){
         for (int i = 0; i < arr.length; i++){
             arr[i] = arr[i] * 2;
