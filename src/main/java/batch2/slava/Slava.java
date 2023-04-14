@@ -1,5 +1,7 @@
 package batch2.slava;
 
+import org.jetbrains.annotations.NotNull;
+
 public class Slava {
     public static void main(String[] args) {
 
@@ -14,7 +16,7 @@ public class Slava {
         int size = arr.length;
         method.Array(arr,size);
     }
-    public void Array(int[] arr, int size){
+    private void Array(int @NotNull [] arr, int size){
         for (int i = 0; i < arr.length; i++){
             arr[i] = arr[i] * 2;
         }
@@ -25,6 +27,5 @@ public class Slava {
                 }
             }
         }
-
     }
 }
