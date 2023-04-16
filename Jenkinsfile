@@ -1,9 +1,28 @@
+@Library('my-shared-library@1.0') // Specify the version of the shared library here
+import com.example.MySharedLibrary
+
 pipeline {
-    agent { docker { image 'maven:3.9.0-eclipse-temurin-11' } }
+    agent any
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                sh 'mvn --version'
+                echo 'Building...'
+                // Call a function from the shared library
+                MySharedLibrary.build()
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+                // Call another function from the shared library
+                MySharedLibrary.test()
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+                // Call another function from the shared library
+                MySharedLibrary.deploy()
             }
         }
     }
