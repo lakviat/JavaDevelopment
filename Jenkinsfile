@@ -3,7 +3,7 @@ pipeline {
 
     parameters {
         choice(name: 'ENVIRONMENT', choices: ['Development', 'Staging', 'Production'], description: 'Select the target environment')
-        choice(name: 'GHERKIN_FILE', description: 'Select Gherkin file(s) to execute', multiSelectDelimiter: ',', type: 'PT_MULTI_SELECT', choices: getGherkinFiles())
+        choice(name: 'GHERKIN_FILE', choices: getGherkinFiles(), description: 'Select Gherkin file(s) to execute', multiSelect: true)
     }
 
     stages {
@@ -47,7 +47,7 @@ pipeline {
             steps {
                 script {
                     def selectedEnvironment = ENVIRONMENT
-                    def selectedFiles = GHERKIN_FILE.split(',')
+                    def selectedFiles = GHERKIN_FILE
 
                     echo "Selected environment: ${selectedEnvironment}"
                     echo "Selected Gherkin file(s): ${selectedFiles}"
