@@ -18,6 +18,24 @@ pipeline {
             }
         }
 
+         stage('Integration Test') {
+            steps {
+                sh 'java src/main/java/CodingAssessments/DuplicatesArrayList.java'
+            }
+        }
+
+       stage('Regression Test') {
+            steps {
+                sh 'java src/main/java/CodingAssessments/DuplicatesArrayList.java'
+            }
+        }
+
+       stage('Staging') {
+            steps {
+                sh 'java src/main/java/CodingAssessments/DuplicatesArrayList.java'
+            }
+        }
+
         stage('Deploy QA ') {
             steps {
                 checkout scm
