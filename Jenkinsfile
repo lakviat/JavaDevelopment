@@ -10,7 +10,7 @@ pipeline {
 
          stage('Test QA ') {
             steps {
-                sh 'javac src/main/java/CodingAssessments/DuplicatesArrayList.java'
+                sh 'java src/main/java/CodingAssessments/DuplicatesArrayList.java'
             }
         }
 
