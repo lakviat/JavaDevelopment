@@ -3,10 +3,10 @@ pipeline {
 
         parameters {
             choice(name: 'ENVIRONMENT', choices: ['QA', 'Development', 'Staging', 'Production'], description: 'Select the target environment')
-         extendedChoice(name: 'GHERKIN_FILE', description: 'Select Gherkin file(s) to execute', multiSelectDelimiter: ',', type: 'PT_MULTISELECT', value: '', groovyScript: '''
+          extendedChoice(name: 'GHERKIN_FILE', description: 'Select Gherkin file(s) to execute', multiSelectDelimiter: ',', type: 'PT_MULTISELECT', value: '', groovyScript: '''
                     def files = []
-                    def directory = new File('.').absolutePath
-                    def pattern = ~/.*\.src/test/java/Features$/
+                    def directory = new File('src/test/java/Features').absolutePath
+                    def pattern = ~/.*\.feature$/
 
                     directory.eachFileRecurse(groovy.io.FileType.FILES) {
                         if (it.name =~ pattern) {
