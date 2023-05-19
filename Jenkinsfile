@@ -3,7 +3,7 @@ pipeline {
 
     parameters {
         choice(name: 'ENVIRONMENT', choices: ['Development', 'Staging', 'Production'], description: 'Select the target environment')
-        choice(name: 'GHERKIN_FILE', choices: getGherkinFiles(), description: 'Select Gherkin file(s) to execute', multiSelect: true)
+        string(name: 'GHERKIN_FILE', defaultValue: '', description: 'Select Gherkin file(s) to execute (comma-separated)', trim: true)
     }
 
     stages {
@@ -47,7 +47,7 @@ pipeline {
             steps {
                 script {
                     def selectedEnvironment = ENVIRONMENT
-                    def selectedFiles = GHERKIN_FILE
+                    def selectedFiles = GHERKIN_FILE.split(',').collect { it.trim() }.findAll { !it.isEmpty() }
 
                     echo "Selected environment: ${selectedEnvironment}"
                     echo "Selected Gherkin file(s): ${selectedFiles}"
@@ -58,18 +58,4 @@ pipeline {
             }
         }
     }
-}
-
-def getGherkinFiles() {
-    def files = []
-    def directory = new File('src/test/java/Features').absolutePath
-    def pattern = ~/.*\.feature$/
-
-    directory.eachFileRecurse(groovy.io.FileType.FILES) {
-        if (it.name =~ pattern) {
-            files.add(it.name)
-        }
-    }
-
-    return files.sort()
 }
