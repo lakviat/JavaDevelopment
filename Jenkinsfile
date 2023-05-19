@@ -52,8 +52,12 @@ pipeline {
                     echo "Selected environment: ${selectedEnvironment}"
                     echo "Selected Gherkin file(s): ${selectedFiles}"
 
-                    // Use the selected environment and Gherkin file(s) in the test execution steps
-                    // ...
+                    if (selectedFiles) {
+                        // Use the selected environment and Gherkin file(s) in the test execution steps
+                        // ...
+                    } else {
+                        echo "No Gherkin file selected. Skipping test execution."
+                    }
                 }
             }
         }
