@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     parameters {
-        choice(name: 'ENVIRONMENT', choices: ['Development', 'Staging', 'Production'], description: 'Select the target environment')
+        choice(name: 'ENVIRONMENT', choices: ['QA', 'Development', 'Staging', 'Production'], description: 'Select the target environment')
         string(name: 'GHERKIN_FILE', defaultValue: '', description: 'Select Gherkin file(s) to execute (comma-separated)', trim: true)
     }
 
