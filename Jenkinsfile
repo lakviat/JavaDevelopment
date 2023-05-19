@@ -6,7 +6,7 @@ pipeline {
          extendedChoice(name: 'GHERKIN_FILE', description: 'Select Gherkin file(s) to execute', multiSelectDelimiter: ',', type: 'PT_MULTISELECT', value: '', groovyScript: '''
                     def files = []
                     def directory = new File('.').absolutePath
-                    def pattern = ~/.*\.feature$/
+                    def pattern = ~/.*\.src/test/java/Features$/
 
                     directory.eachFileRecurse(groovy.io.FileType.FILES) {
                         if (it.name =~ pattern) {
