@@ -8,7 +8,7 @@ public class DuplicatesArrayList {
         ArrayList<String> word = new ArrayList();
         word.add("Hello");
         word.add("Hello");
-        word.add("NoHello");
+        word.add("No Hello");
         word.add("Random");
 
         ArrayList<String> duplicates = new ArrayList<String>();
