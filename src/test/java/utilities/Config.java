@@ -1,34 +1,26 @@
 package utilities;
 
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.util.Properties;
 
 public class Config {
 
-    private static Properties properties = new Properties();
+    private static Properties pro;
 
-    public static String getProperty(String keyword) {
-
-        return properties.getProperty(keyword);
-
+    static{
+        String path = "configuration.properties";
+        try {
+            FileInputStream file = new FileInputStream(path);
+            pro = new Properties();
+            pro.load(file);
+            file.close();
+        } catch (Exception e) {
+            System.out.println("Path: " + path + " - not found.");
+        }
     }
 
-    static  {
-
-        String path = "configuration.properties";
-
-        try {
-
-            FileInputStream file = new FileInputStream(path);
-            properties.load(file);
-            file.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.out.println("File not found");
-        }
-
+    public static String getProperty(String key){
+        return pro.getProperty(key);
     }
 
 }
