@@ -7,11 +7,11 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                checkout scm
-            }
-        }
+//         stage('Clone Repository') {
+//             steps {
+//                 checkout scm
+//             }
+//         }
 
         stage('Test QA') {
             steps {
@@ -31,11 +31,11 @@ pipeline {
             }
         }
 
-        stage('Staging') {
-            steps {
-                sh 'java src/main/java/CodingAssessments/DuplicatesArrayList.java'
-            }
-        }
+//         stage('Staging') {
+//             steps {
+//                 sh 'java src/main/java/CodingAssessments/DuplicatesArrayList.java'
+//             }
+//         }
 
         stage('Deploy QA') {
             steps {
