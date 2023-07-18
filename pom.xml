@@ -190,8 +190,6 @@
         </dependency>
 
 
-
-
     </dependencies>
 
     <!-- This is for the connection with JDBC  this has to be prrovided trhu the company -->
@@ -212,8 +210,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.8.0</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>11</source>
+                    <target>11</target>
                     <compilerArgs>
                         <arg>-Xlint:unchecked</arg>
                     </compilerArgs>
