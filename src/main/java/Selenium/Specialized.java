@@ -9,7 +9,7 @@ public class Specialized {
 
 
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "/Users/nurlandzhunushaliev/Downloads/ChromeDriverFolder/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/nurlanmirovich/integration-automation/JavaDevelopment/src/test/java/browserdrivers/chromedriver");
         WebDriver driver = new ChromeDriver();
 
 //        WebElement username = driver.findElement(By.name("userName"));
@@ -51,7 +51,7 @@ public class Specialized {
 
         }
         public void Specialized (String name) throws InterruptedException{
-            System.setProperty("webdriver.chrome.driver", "/Users/nurlandzhunushaliev/Downloads/ChromeDriverFolder/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "/Users/nurlanmirovich/integration-automation/JavaDevelopment/src/test/java/browserdrivers/chromedriver");
             WebDriver driver = new ChromeDriver();
 //        WebElement username = driver.findElement(By.name("userName"));
 //        WebElement password = driver.findElement(By.name("password"));
