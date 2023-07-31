@@ -1,13 +1,13 @@
-package database;
+package database.utils;
 
 import utilities.Config;
 
 import java.sql.*;
 
-public class JDBCExample {
+public class JDBC {
 
-    public static void main(String[] args) throws SQLException {
 
+    public static void executeQuery(String query) throws SQLException {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection conn = DriverManager.getConnection(Config.getProperty("mysql.url"), Config.getProperty("mysql.username"), Config.getProperty("mysql.password"));
@@ -16,7 +16,6 @@ public class JDBCExample {
             Statement stmt = conn.createStatement();
 
             // Execute a query
-            String query = "SELECT * FROM STUDENTS";
             ResultSet rs = stmt.executeQuery(query);
             ResultSetMetaData rsmd = rs.getMetaData();
             int columnsNumber = rsmd.getColumnCount();
@@ -50,5 +49,8 @@ public class JDBCExample {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+    public static void readOnlyTables(String query){
+
     }
 }
