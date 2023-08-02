@@ -1,6 +1,5 @@
 package Overriding;
 
-import cucumber.api.java.eo.Do;
 
 //Method Overloading is when you have different parameters but same name method
 //Main thing here to make sure it is in the same class or can be extended from different class as well
