@@ -4,7 +4,6 @@ public class CharDoubleLettersString {
     public static void main(String[] args) {
 
         // This function duplicates the characters of the string
-
         String word = "Hello world";
         char c = 0;
         String result = "";
