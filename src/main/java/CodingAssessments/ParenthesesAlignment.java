@@ -1,18 +1,14 @@
 package CodingAssessments;
 
-public class ParanthesisAlignment {
-
+public class ParenthesesAlignment {
 
     public static void main(String[] args) {
-
         System.out.println(balancedOrNot("({[]}"));
-
     }
+
     public static boolean balancedOrNot(String str) {
-
-
         boolean isMatched=false;
-        if(str.length()%2 !=0) {
+        if(str.length() % 2 !=0) {
             return false;
         }
         else {
@@ -33,16 +29,9 @@ public class ParanthesisAlignment {
                 else {
                     isMatched=false;
                     break;
-
                 }
-
             }
-
             return isMatched;
-
         }
-
     }
-
-
 }

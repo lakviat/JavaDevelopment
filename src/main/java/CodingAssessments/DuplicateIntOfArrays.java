@@ -1,6 +1,6 @@
 package CodingAssessments;
 
-public class Duplicate {
+public class DuplicateIntOfArrays {
     public static void main(String[] args) {
 
         // Duplicates in int of arrays

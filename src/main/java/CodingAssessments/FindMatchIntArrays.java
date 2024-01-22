@@ -13,7 +13,7 @@ public class FindMatchIntArrays {
             for (int j = i + 1; j < nums.length; j++) {
                 if( nums[i] != nums[j]){
                     count ++;
-                    System.out.println(" Not Duplicate " + nums[j]);
+                    System.out.println(" Not DuplicateIntOfArrays " + nums[j]);
                     break;
 
                 }
