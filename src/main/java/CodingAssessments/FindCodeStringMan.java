@@ -3,7 +3,6 @@ package CodingAssessments;
 public class FindCodeStringMan {
     public static void main(String[] args) {
 
-
 //    Return the number of times that the string "code"
 //    appears anywhere in the given string, except
 //    we'll accept any letter for the
@@ -14,14 +13,11 @@ public class FindCodeStringMan {
 
         String str = "Hellocodecopecooe";
         int count = 0;
-
-        for(int i = 0; i < str.length() - 3; i++) {
+        for (int i = 0; i < str.length() - 3; i++) {
             if (str.substring(i, i + 2).equals("co") && str.charAt(i + 3) == 'e')
                 count++;
-
-
         }
         System.out.println(count);
     }
 
-    }
+}

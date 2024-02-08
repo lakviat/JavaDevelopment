@@ -1,7 +1,7 @@
 package CodingAssessments;
 import java.util.Arrays;
 
-public class ReplaceMissingNumbersInTwoIntOrArraysWithX {
+public class ReplaceMissingIntNumWithX {
     /*
         a = [2, 1, 3, 6]
         b = [1, 4, 5]
@@ -11,25 +11,20 @@ public class ReplaceMissingNumbersInTwoIntOrArraysWithX {
      */
     public static void main(String[] args) {
         int[] a = {1, 2, 3, 4, 7};
-        int[] b = {2, 3, 10};
-//        result(a);
-        result(b);
+        result(a);
     }
 
     public static void result(int[] num) {
-//        int start = num[0];
         int end = num[num.length - 1];
         int[] result = new int[findMax(num)];
 
         for (int i = findMin(num); i <= end; i++) {
             result[i - 1] = i;
             if (indexOf(num, i) == -1) {
-//                System.out.println("Missing number: " + i);
                 result[i] = i;
             }
         }
         System.out.println("PRINTING THE RESULT : " + Arrays.toString(result));
-//        return result;
     }
 
     public static int indexOf(int[] arr, int target) {

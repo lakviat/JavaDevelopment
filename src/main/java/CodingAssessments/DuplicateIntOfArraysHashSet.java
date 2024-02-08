@@ -3,7 +3,7 @@ package CodingAssessments;
 import java.util.HashSet;
 import java.util.Set;
 
-public class DuplicateIntOfArraysUsingHashSet {
+public class DuplicateIntOfArraysHashSet {
     public static void main(String[] args) {
         int[] num = {10, 20, 30, 1, 50, 4, 2, 50};
 
