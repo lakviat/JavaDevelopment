@@ -16,7 +16,7 @@ public class StringDuplicate {
             for (int i = 0; i < str2.length; i++) {
                 if (i == j && str2[i] == str2[j]) {
                     total += str2[i];
-                    count ++;
+                    count++;
 
                     System.out.println(count + " " + total);
                 }

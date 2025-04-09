@@ -6,7 +6,7 @@ public class FirstNonRepeatingCharinString {
         String s = "jjaavvaaf";
         for(Character ch:s.toCharArray()) {
             if(s.indexOf(ch) == s.lastIndexOf(ch)) {
-                System.out.println("First non repeat character = " + ch);
+                System.out.println("First non repeat character,hfyrohuq = " + ch);
                 break;
             }
         }

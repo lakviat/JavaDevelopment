@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LInkedin {
     public static void main(String[] args) throws InterruptedException {
-        System.setProperty("webdriver.chrome.driver", "/Users/nurlandzhunushaliev/Downloads/ChromeDriverFolder/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "./src/test/java/browserdrivers/chromedriver");
 
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.linkedin.com");

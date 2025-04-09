@@ -12,9 +12,6 @@ public class Google {
         System.setProperty("webdriver.chrome.driver", "chromedriver");
         driver.get("www.google.com");
 
-
-
-
         }
     }
 

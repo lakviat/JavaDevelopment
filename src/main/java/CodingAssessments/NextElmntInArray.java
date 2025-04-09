@@ -16,7 +16,7 @@ public class NextElmntInArray {
                 number[i +1] = 0;
                 System.out.println(Arrays.asList(number + "True"));
             }else{
-                System.out.println(Arrays.asList(number + "NOT True"));
+                System.out.println(Arrays.asList(number + "False"));
             }
 
         }

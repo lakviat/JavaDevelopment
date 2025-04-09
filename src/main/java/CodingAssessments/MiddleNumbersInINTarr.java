@@ -3,7 +3,7 @@ package CodingAssessments;
 public class MiddleNumbersInINTarr {
     public static void main(String[] args) {
 
-        //This methods returns the average sum in the array of int
+        // The method returns the average sum in the array of int
 
         int[] num = {7,2,10,9};
         int min_number = num[0];

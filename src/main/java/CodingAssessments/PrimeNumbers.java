@@ -6,7 +6,7 @@ public class PrimeNumbers {
         for (int k = 1; k < 101; k++) {
             boolean flag = false;
             for (int i = 2; i <= k / 2; ++i) {
-                // condition for non prime number
+                // condition for non-prime number
                 if (k % i == 0) {
                     flag = true;
                     break;

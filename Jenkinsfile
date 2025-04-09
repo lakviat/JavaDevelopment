@@ -1,30 +1,63 @@
 pipeline {
     agent any
 
+    parameters {
+        choice(name: 'ENVIRONMENT', choices: ['QA', 'Development', 'Staging', 'Production'], description: 'Select the target environment')
+        string(name: 'GHERKIN_FILE', defaultValue: '', description: 'Select Gherkin file(s) to execute (comma-separated)', trim: true)
+    }
+
     stages {
-        stage ('Compile Stage') {
+//         stage('Clone Repository') {
+//             steps {
+//                 checkout scm
+//             }
+//         }
 
+        stage('Test QA') {
             steps {
-                withMaven(maven : 'maven_3_5_0') {
-                    sh 'mvn clean compile'
-                }
+                sh 'java src/main/java/CodingAssessments/DuplicatesArrayList.java'
             }
         }
 
-        stage ('Testing Stage') {
-
+        stage('Integration Test') {
             steps {
-                withMaven(maven : 'maven_3_5_0') {
-                    sh 'mvn test'
-                }
+                sh 'java src/main/java/CodingAssessments/DuplicatesArrayList.java'
             }
         }
 
-
-        stage ('Deployment Stage') {
+        stage('Regression Test') {
             steps {
-                withMaven(maven : 'maven_3_5_0') {
-                    sh 'mvn deploy'
+                sh 'java src/main/java/CodingAssessments/DuplicatesArrayList.java'
+            }
+        }
+
+//         stage('Staging') {
+//             steps {
+//                 sh 'java src/main/java/CodingAssessments/DuplicatesArrayList.java'
+//             }
+//         }
+
+        stage('Deploy QA') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Execute Tests') {
+            steps {
+                script {
+                    def selectedEnvironment = ENVIRONMENT
+                    def selectedFiles = GHERKIN_FILE.split(',').collect { it.trim() }.findAll { !it.isEmpty() }
+
+                    echo "Selected environment: ${selectedEnvironment}"
+                    echo "Selected Gherkin file(s): ${selectedFiles}"
+
+                    if (selectedFiles) {
+                        // Use the selected environment and Gherkin file(s) in the test execution steps
+                        // ...
+                    } else {
+                        echo "No Gherkin file selected. Skipping test execution."
+                    }
                 }
             }
         }
