@@ -1,9 +1,7 @@
 name: Simple Pipeline
 
 on:
-  push:
-    branches:
-      - main
+  push:  # This triggers on push to any branch
 
 jobs:
   hello-world:
