@@ -1,7 +1,7 @@
 name: Simple Pipeline
 
 on:
-  push: master
+  push:  # Trigger on any push to any branch
   workflow_dispatch:  # Adds a "Run workflow" button in the Actions tab
     inputs:
       username:
@@ -11,7 +11,8 @@ on:
 
 jobs:
   hello-world:
-    runs-on: ubuntu-latest
+    name: Greet on Ubuntu
+    runs-on: ubuntu-latest  # ✅ This specifies the Ubuntu runner
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
