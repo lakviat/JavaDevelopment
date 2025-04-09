@@ -1,7 +1,7 @@
 name: Simple Pipeline
 
 on:
-  push:  # Trigger on any push to any branch
+  push: master
   workflow_dispatch:  # Adds a "Run workflow" button in the Actions tab
     inputs:
       username:
